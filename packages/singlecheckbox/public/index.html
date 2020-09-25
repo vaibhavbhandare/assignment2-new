@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes" />
+
+  <title>Orxe3 Components</title>
+
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+
+  <link rel="stylesheet" href="https://oski-cdn.s3.amazonaws.com/common/css/fonts/ProximaNova/proxima-nova.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://components.common.cnxloyalty.com/bundles/theme/css/imports.css" />
+  <link rel="stylesheet" type="text/css" href="https://components.qa.cnxloyalty.com/theme/css/imports.css" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/2.3.0/custom-elements-es5-adapter.js"></script>
+
+</head>
+
+<body>
+
+  <!-- Default -->
+  <orxe-singlecheckbox checkbox-state='checkbox-enable'
+    name="checkbox-unselect" value="true" required>
+    People 1
+  </orxe-singlecheckbox>
+
+  <!-- checked -->
+  <orxe-singlecheckbox checkbox-state='checkbox-enable' checked
+    name="checkbox-select" value="true" required>
+    People 2
+  </orxe-singlecheckbox>
+
+  <!-- Checkbox Unselect Disabled -->
+  <orxe-singlecheckbox name="checkbox-unselect-disabled" value="true"
+  required disabled>
+   People 3
+  </orxe-singlecheckbox>
+
+  <!-- Checkbox select Disabled -->
+  <orxe-singlecheckbox name="checkbox-select-disabled" value="true"
+    checked required disabled>
+    People 4
+  </orxe-singlecheckbox>
+
+  <!-- Single checkbox for group -->
+  <orxe-singlecheckbox checkbox-state='checkbox-group'
+    name="checkbox-unselect" value="true" required>
+    People 5
+    <span slot="data">$200</span>
+  </orxe-singlecheckbox>
+
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+@import './singlecheckbox-map.scss';
+
+* {
+    font-family: var(--font-family);
+    box-sizing: border-box;
+}
+
+.checkbox-common {
+
+    .disabled-parent {
+        width: 100%;
+
+        .container {
+            width: 100%;
+            height: 48px;
+            background-color: var(--neutral-color);
+            display: flex;
+            align-items: center;
+            border-width: 1.2px;
+            padding: 0px 16px;
+            position: relative;
+
+            .checkbox-input {
+                width: 20px;
+                height: 20px;
+                color: var(--checkbox-disabled-text);
+                padding: 0px;
+                margin: 0px
+            }
+
+            .label {
+                font-size: 1.4rem;
+                font-weight: var(--font-weight);
+                color: var(--font-color);
+                display: inline-block;
+                padding-left: 8px;
+            }
+
+            .select {
+                vertical-align: top;
+                display: block;
+                width: 100%;
+            }
+
+            .slot-data {
+                font-size: 1.4rem;
+                font-weight: var(--font-weight);
+                color: var(--tertiary-color);
+                position: absolute;
+                right: 16px;
+                float: right;
+            }
+        }
+    }
+}
+
+.checkbox-unable {
+    @extend .checkbox-common;
+}
